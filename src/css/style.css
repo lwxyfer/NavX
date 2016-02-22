@@ -1,0 +1,29 @@
+/*
+ * custom css
+ */
+body {
+	font-family: Roboto,"MicroSoft YaHei",sans-serif;
+}
+header, main, footer {
+      padding-left: 240px;
+    }
+
+    @media only screen and (max-width : 992px) {
+      header, main, footer {
+        padding-left: 0;
+      }
+    }
+nav {
+	height:120px;
+}
+h1,h2,h3,h4 {
+	margin:0px;
+	padding:1rem;
+	color:#fff;
+}
+#slide-out .bottom {
+	position:absolute;
+	width:100%;
+	bottom:2rem;
+	color:#000;
+}

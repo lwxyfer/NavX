@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <title>NavX 1.0</title>
+    <meta name="description" content="年轻人的第一枚导航">
+    <meta name="keywords" content="JavaScript,webpack,Vue,Materialize">
+    <meta name="author" descriptionn="lwxyfer.com">
+  </head>
+  <body>
+    <header>
+      <nav class="row z-depth-1">
+        <div class="container col s6 right" id="searchBox">
+          <form>
+            <div class="input-field">
+              <input id="search" type="search" required value="Search">
+              <label for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+        <ul id="slide-out" class="side-nav fixed">
+          <li class="light-blue lighten-1 z-depth-2">
+          <a href="#!">
+            <h4>Nav X 1.0</h4>
+            </a></li>
+          <li><a href="#!">First Sidebar Link</a></li>
+          <li><a href="#!">Second Sidebar Link</a></li>
+          <li class="bottom"><a href="#">关于</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="center row">
+          <div class="col s12">
+            <div class="z-depth-1 pink lighten-1">
+              <h4>阅 读</h4>
+            </div>
+            <ul class="collection with-header">
+              <li class="collection-item" v-for="li in list">
+                <a href="{{ li.link }}"> {{ li.text }} </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col s6 m4" id="second">
+            <div class="z-depth-1 light-blue darken-1">
+              <h4>SUPER</h4>
+            </div>
+            <ul class="collection with-header">
+              <li v-for="lists in list" class="collection-item">
+                <a href="{{ lists.link }}"> {{ lists.text }} </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col s6 m4" id="second">
+            <div class="z-depth-1 light-blue darken-1">
+              <h4>SUPER</h4>
+            </div>
+            <ul class="collection with-header">
+              <li v-for="lists in list" class="collection-item">
+                <a href="{{ lists.link }}"> {{ lists.text }} </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </main>
+  <footer></footer>
+  <script src="public/bundle.js" charset="utf-8"></script>
+</body>
+</html>
