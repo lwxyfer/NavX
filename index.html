@@ -9,11 +9,22 @@
   </head>
   <body>
     <header>
-      <nav class="row z-depth-1">
-        <div class="container col s6 right" id="searchBox">
-          <form>
+      <nav class="row z-depth-2">
+      <a href="#" data-activates="slide-out" class="button-collapse left"><i class="mdi-navigation-menu"></i></a>
+        <!-- <div class="switch col s3 right">
+          <label>
+            <input type="checkbox" id="searchTog">
+            <span class="lever"></span>
+          </label>
+        </div>
+        <div class="input-field col s4 l2 right" id="searchInner">
+          <input placeholder="站内搜索" type="text" class="validate" v-model="site">
+        </div> -->
+        <div class="container col s10 m4 l6 right" id="searchBox">
+          <form action="https://www.google.com/search" method="get">
             <div class="input-field">
-              <input id="search" type="search" required value="Search">
+              <input type="hidden" name="sitesearch" value="http://{{ site }}" />
+              <input id="search" type="search" name="q" required value="{{ site }}" placeholder="Google search">
               <label for="search"><i class="material-icons">search</i></label>
               <i class="material-icons">close</i>
             </div>
@@ -21,51 +32,69 @@
         </div>
         <ul id="slide-out" class="side-nav fixed">
           <li class="light-blue lighten-1 z-depth-2">
-          <a href="#!">
-            <h4>Nav X 1.0</h4>
+            <a href="#!">
+              <h4>Nav X 1.0</h4>
             </a></li>
-          <li><a href="#!">First Sidebar Link</a></li>
-          <li><a href="#!">Second Sidebar Link</a></li>
-          <li class="bottom"><a href="#">关于</a></li>
-        </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-      </nav>
-    </header>
-    <main id="main">
+            <li><a href="#!">一个世界</a></li>
+            <li><a href="#!">Second Sidebar Link</a></li>
+            <li class="bottom"><a href="#">关于</a></li>
+          </ul>
+          
+        </nav>
+      </header>
+      <main class="">
       <div class="center row">
-          <div class="col s12">
-            <div class="z-depth-1 pink lighten-1">
-              <h4>阅 读</h4>
-            </div>
-            <ul class="collection with-header">
-              <li class="collection-item" v-for="li in list">
-                <a href="{{ li.link }}"> {{ li.text }} </a>
-              </li>
-            </ul>
+        <div class="col s12 l6">
+          <div class="z-depth-1 grey lighten-3 left-align border-1">
+            <h4>字体</h4>
           </div>
-          <div class="col s6 m4" id="second">
-            <div class="z-depth-1 light-blue darken-1">
-              <h4>SUPER</h4>
-            </div>
-            <ul class="collection with-header">
-              <li v-for="lists in list" class="collection-item">
-                <a href="{{ lists.link }}"> {{ lists.text }} </a>
-              </li>
-            </ul>
+          <div class="collection">
+            <a v-for="li in list" href="{{ li.link }}" class="collection-item lighten-3"> {{ li.text }} </a>
           </div>
-          <div class="col s6 m4" id="second">
-            <div class="z-depth-1 light-blue darken-1">
-              <h4>SUPER</h4>
-            </div>
-            <ul class="collection with-header">
-              <li v-for="lists in list" class="collection-item">
-                <a href="{{ lists.link }}"> {{ lists.text }} </a>
-              </li>
-            </ul>
+        </div>
+        <div class="col s12 m4 l6">
+          <div class="z-depth-1 grey lighten-3 border-2">
+            <h4>社区</h4>
           </div>
+          <ul class="collection">
+            <a v-for="lists in list" class="collection-item lighten-3" href="{{ lists.link }}"> {{ lists.text }} </a>
+          </ul>
+        </div>
+        <div class="col s12 m4">
+          <div class="z-depth-1 grey lighten-3 border-5">
+            <h4>阅读</h4>
+          </div>
+          <ul class="collection">
+            <a v-for="lists in todo" class="collection-item lighten-3" href="{{ lists.link }}"> {{ lists.text }} </a>
+          </ul>
+        </div>
+        <div class="col s12 m4">
+          <div class="z-depth-1 grey lighten-3 border-3">
+            <h4>导航</h4>
+          </div>
+          <ul class="collection">
+            <a v-for="lists in todo" class="collection-item lighten-3" href="{{ lists.link }}"> {{ lists.text }} </a>
+          </ul>
+        </div>
+        <div class="col s12 m4">
+          <div class="z-depth-1 grey lighten-3 border-4">
+            <h4>网站</h4>
+          </div>
+          <ul class="collection">
+            <a v-for="lists in todo" class="collection-item lighten-3" href="{{ lists.link }}"> {{ lists.text }} </a>
+          </ul>
+        </div>
+        <div class="col s12 m5">
+          <div class="z-depth-1 grey lighten-3 border-2">
+            <h4>SUPER</h4>
+          </div>
+          <ul class="collection">
+            <a v-for="lists in todo" class="collection-item lighten-3" href="{{ lists.link }}"> {{ lists.text }} </a>
+          </ul>
+        </div>
       </div>
-    </main>
-  <footer></footer>
-  <script src="public/bundle.js" charset="utf-8"></script>
-</body>
+      </main>
+    <footer></footer>
+    <script src="public/bundle.js" charset="utf-8"></script>
+  </body>
 </html>

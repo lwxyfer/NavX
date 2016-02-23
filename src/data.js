@@ -1,4 +1,4 @@
-var myData = {
+module.exports  = {
 	list:[
       { text: '知乎：CSS 选择器参考手册',
       	link:'谷歌：www.googleAAAAA.com' },
@@ -11,5 +11,16 @@ var myData = {
         { text: 'Build Something Awesome4 LIST',
         link:'拉钩：www.googleCCCCCCCCC.com' },
     ],
+  todo:[
+      { text: '支付宝：CSS 选择器参考手册',
+        link: '谷歌：www.googleAAAAA.com' },
+      { text: 'Quora：CSS 选择器参考手册 ',
+        link: '导航：www.googleBBBBBBB.com' },
+      { text: 'STACK Something Awesome4 LIST',
+        link: '导航：www.googleCCCCCCCCC.com' },
+      { text: '电脑 Something Awesome4 LIST',
+        link: '导航：www.googleCCCCCCCCC.com' },
+      { text: '输入法 Something Awesome4 LIST',
+        link: '导航：www.googleCCCCCCCCC.com' },
+    ],
     }
-module.exports = myData

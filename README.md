@@ -22,7 +22,7 @@ Echart
 
 # TODO
 
-Google Search API
+Google Search API  : 强大的搜索框
 
 ctrl + alt + X 定位到搜索框
 
@@ -34,11 +34,12 @@ Json数据
 
 数据可视化
 
+批量打开链接
+
 
 # Supported Browsers:
 
-Chrome 35+, Firefox 31+, Safari 7+, IE 10+
+Chrome 35+, Firefox 31+, Safari 7+, IE 10+(Fuck IE)
 
-Fuck IE
-
+![enter image description here](http://svgporn.com/logos/chrome.svg)
 
