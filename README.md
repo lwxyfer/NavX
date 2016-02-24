@@ -36,6 +36,10 @@ Json数据
 
 批量打开链接
 
+RSS 链接
+
+Jade
+
 
 # Supported Browsers:
 

@@ -1,12 +1,13 @@
 var Webpack = require("webpack")
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var path = require("path")
+// var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry: "./src/main.js",
     output: {
-        path: "./public/",
-        publicPath: "/public/",
-        filename: "bundle.js"
+        path: 'public/',
+        publicPath: "public/",
+        filename: "bundle.js",
     },
     module: {
         loaders: [{
