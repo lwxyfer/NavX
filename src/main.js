@@ -22,3 +22,6 @@ var siteSearch = new Vue({
 // })
 $(".button-collapse").sideNav();
 $('select').material_select();
+// $(document).on("keyup",function(){
+// 	if()
+// })
