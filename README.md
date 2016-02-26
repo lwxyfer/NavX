@@ -12,10 +12,11 @@ Materialize
 vue.js
 jQuery
 
+ES6
 google API
 Echart
 
-# Current Version : v0.1
+# Current Version : beta 1.0.0
 
 先暂时做第一版，作为年轻人自己的第一枚导航，必须有态度。
 
@@ -43,7 +44,7 @@ Jade
 
 # Supported Browsers:
 
-Chrome 35+, Firefox 31+, Safari 7+, IE 10+(Fuck IE)
+Chrome 35+, Firefox 31+ 【[Just tested Chrome & Firefox,Fuck others]
 
 ![enter image description here](http://svgporn.com/logos/chrome.svg)
 
