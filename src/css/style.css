@@ -25,7 +25,6 @@ h4 {
 	font-size:1.6rem;
 }
 /* main ie fix */
-
 main {
 	display: block;
 }
@@ -35,6 +34,12 @@ main {
 main h1,h2,h3,h4 {
 	color:#232323;
 }
+main .col > div:first-child {
+	color:#000;
+	background:#fff;
+	border-radius:3px;
+}
+
 .collection a.collection-item {
 	color: #292929;
 }
@@ -61,4 +66,7 @@ main h1,h2,h3,h4 {
 }
 .border-5 {
 	border-bottom: 4px solid #fff300;
+}
+.fix-layout {
+	height:350px;
 }

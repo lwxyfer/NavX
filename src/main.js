@@ -21,24 +21,13 @@ var dataVue = (function() {
             var b = myData[a][j]
 			data[a].push({
 				'text': b[0],
-				'link': 'http://' + b[1],
-				'tooltip': b[2] ? b[2] : 'No tooltip'
+				'link': /\bhttp/.test(b[1]) ? b[1] : 'http://' + b[1],
+				'tooltip': b[2] ? b[2] : 'nothing'
 			})
 		}
 	}
 	return data
 })()
-
-// var MyComponent = Vue.extend({
-// 	props:['dat','msg'],
-// 	data:function() { return dataVue }, 
-//   template: "<div class='col'><div><h4>{{ msg }}</h4></div><div class='collection'><a  v-for='li in {{ dat }}'  href='{{ li.link }}' data-tooltip='{{ li.tooltip }}' class='collection-item lighten-3 tooltipped' data-position='top'>{{ li.text }}</a></div></div>",
-// })
-
-
-
-// 注册
-// Vue.component('my-component', MyComponent)
 
 
 /**
@@ -46,31 +35,25 @@ var dataVue = (function() {
  * @type {Vue}
  */
 var NavData = new Vue({
-	el: "#thmain",
+	el: "main",
 	data: dataVue
 })
-// var siteSearch = new Vue({
-// 		el: "nav",
-// 		data: {
-// 			site: "Inner Search"
-// 		}
-// 	})
 
-
-// 自动添加 style class
-$('main .collection a').addClass('collection-item lighten-3 tooltipped')
 
 /**
  * init Materialize function
  */
-	// $('#searchTog').click(function() {
-	// 	$('#searchInner').slideToggle(1000)
-	// })
-	//
 $(document).ready(function() {
+	$('main .collection a').addClass('collection-item lighten-3')
+	$("main .collection a").each(function(){
+    	if( $(this).attr('data-tooltip') !== 'nothing' ) {
+    		$(this).addClass('tooltipped')
+    		$(this).attr('data-position','top')
+    	}
+  	});
 	$(".button-collapse").sideNav();
 	$('select').material_select();
-	$('.tooltipped').tooltip({delay: 50});
+	$('.tooltipped').tooltip({delay: 50,});
 	$(document).keydown(function(e) {
 		var e = e || window.event;
 		if (e.ctrlKey && e.keyCode == 13) {
@@ -78,16 +61,3 @@ $(document).ready(function() {
 		}
 	})
 })
-<<<<<<< HEAD
-// $('#searchTog').click(function() {
-// 	$('#searchInner').slideToggle(1000)
-// })
-$(".button-collapse").sideNav();
-$('select').material_select();
-// $(document).on("keyup",function(){
-// 	if()
-// })
-=======
-
-
->>>>>>> test

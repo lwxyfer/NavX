@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="src/css/icon.css">
     <link rel="stylesheet" type="text/css" href="src/materialize/css/materialize.min.css">
   </head>
-  <body style="background:url(src/img/a2.jpg)">
+  <body class="grey lighten-2">
     <header>
 
       <nav class="row z-depth-2">
@@ -20,8 +20,7 @@
         <div class="container col s10 m4 l6 right" id="searchBox">
           <form action="https://www.google.com/search" method="get">
             <div class="input-field">
-              <input type="hidden" name="sitesearch" value="http://{{ site }}" />
-              <input id="search" type="search" name="q" required value="{{ site }}" placeholder="Google search">
+              <input id="search" type="search" name="q" required value="" placeholder="Ctrl + Enter">
               <label for="search"><i class="material-icons">search</i></label>
               <i class="material-icons">close</i>
             </div>
@@ -34,64 +33,57 @@
             </a></li>
             <li><a href="#!">一个世界</a></li>
             <li><a href="#!">Second Sidebar Link</a></li>
-            <li class="bottom"><a href="#">关于</a></li>
           </ul>
         </nav>
       </header>
       <main>
-      <div class="center row container" id="thmain">
-
-      
-        <my-component msg="导航" dat="days" class="s12 l4"></my-component>
-        <my-child></my-child>
-
-        <div class="col s12 l4 left">
+      <div class="center row container">
+        <div class="col s12 m4">
           <div class="border-1">
-            <h4>字体</h4>
+            <h4>日常</h4>
           </div>
           <div class="collection">
             <a v-for="li in days" href="{{ li.link }}" data-tooltip="{{ li.tooltip }}"> {{ li.text }} </a>
           </div>
         </div>
-
-        <div class="col s12 m4 l4 left z-depth-1">
-          <div class="z-depth-1 grey lighten-3 border-2">
+        <div class="col s12 m4 fix-layout">
+          <div class="border-2">
+            <h4>文章</h4>
+          </div>
+          <ul class="collection">
+            <a v-for="lists in blogs" href="{{ lists.link }}" data-tooltip="{{ lists.tooltip }}"> {{ lists.text }} </a>
+          </ul>
+        </div>
+        <div class="col s12 m4">
+          <div class="border-5">
             <h4>社区</h4>
           </div>
           <ul class="collection">
-            <a v-for="lists in edits" href="{{ lists.link }}" data-tooltip="{{ lists.tooltip }}"> {{ lists.text }} </a>
+            <a v-for="lists in community" href="{{ lists.link }}" data-tooltip="{{ lists.tooltip }}"> {{ lists.text }} </a>
           </ul>
         </div>
-        <div class="col s12 m4 l4 left">
-          <div class="z-depth-1 grey lighten-3 border-5">
-            <h4>阅读</h4>
+        <div class="col s12 m4 l5">
+          <div class="border-3">
+            <h4>文档</h4>
           </div>
           <ul class="collection">
-            <a v-for="lists in navs" href="{{ lists.link }}" data-tooltip="{{ lists.tooltip }}"> {{ lists.text }} </a>
+            <a v-for="lists in doc" href="{{ lists.link }}" data-tooltip="{{ lists.tooltip }}"> {{ lists.text }} </a>
           </ul>
         </div>
-        <div class="col s12 m4 l5 left">
-          <div class="z-depth-1 grey lighten-3 border-3">
-            <h4>导航</h4>
-          </div>
-          <ul class="collection">
-            <a v-for="lists in edits" href="{{ lists.link }}" data-tooltip="{{ lists.tooltip }}"> {{ lists.text }} </a>
-          </ul>
-        </div>
-        <div class="col s12 m4 l4 left">
-          <div class="z-depth-1 grey lighten-3 border-4">
-            <h4>网站</h4>
+        <div class="col s12 m4 l4">
+          <div class="border-4">
+            <h4>编辑器</h4>
           </div>
           <ul class="collection">
             <a v-for="lists in edits" href="{{ lists.link }}" data-tooltip="{{ lists.tooltip }}"> {{ lists.text }} </a>
           </ul>
         </div>
-        <div class="col s12 m5 l5">
-          <div class="z-depth-1 grey lighten-3 border-2">
+        <div class="col s12 m3">
+          <div class="border-2">
             <h4>SUPER</h4>
           </div>
           <ul class="collection">
-            <a v-for="lists in days" href="{{ lists.link }}" data-tooltip="{{ lists.tooltip }}"> {{ lists.text }} </a>
+            <a v-for="lists in navs" href="{{ lists.link }}" data-tooltip="{{ lists.tooltip }}"> {{ lists.text }} </a>
           </ul>
         </div>
       </div>
