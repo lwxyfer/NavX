@@ -4,15 +4,6 @@
 body {
 	font-family: Roboto,"MicroSoft YaHei",sans-serif;
 }
-header, main, footer {
-      padding-left: 240px;
-    }
-
-    @media only screen and (max-width : 992px) {
-      header, main, footer {
-        padding-left: 0;
-      }
-    }
 nav {
 	height:120px;
 }
@@ -32,6 +23,11 @@ h3 {
 }
 h4 {
 	font-size:1.6rem;
+}
+/* main ie fix */
+
+main {
+	display: block;
 }
 main {
 	margin-top:3rem;
