@@ -7,8 +7,6 @@ Vue.config.debug = true
 
 /**
  * format data for using in Vue.js
- * @param  myData
- * @return dataVue
  */
 var dataVue = (function() {
 	var myData = require("./data.js")
@@ -28,8 +26,6 @@ var dataVue = (function() {
 	}
 	return data
 })()
-
-
 /**
  * 实例Vue
  * @type {Vue}
@@ -38,8 +34,6 @@ var NavData = new Vue({
 	el: "main",
 	data: dataVue
 })
-
-
 /**
  * init Materialize function
  */
