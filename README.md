@@ -1,36 +1,61 @@
 # NavX
 
-年轻人的第一枚导航。
+The first navigation to stripling.
 
-完全自定义导航，简单的二次开发，每个人都应该有自己的导航。
+you can change it to whatever you like.
 
 # Architecture
 
-webpack 
+webpack
 Materialize
 vue.js
 jQuery
 
+# USAGE
+
+```
+// first
+clone the RP
+
+// second
+npm install
+
+// third
+use webpack
+```
+
+# Structure
+
+```
+- node_modules
+- public
+ - bundle.js  // webpack output
+ - static     // font, img
+- src
+ - main.js    // webpack entry
+ - others
+- index.html
+- package.json
+- webpack.config.js
+```
+
 # Current Version : beta 1.0.0
 
-先暂时做第一版，作为年轻人自己的第一枚导航，必须有态度。
-
+As you can see, my todo's list is so long. So waiting until my future change done.
 
 # TODO
 
-Google Search API  : 强大的搜索框
+enrich search 
 
-增加拖动 排序 导航模块
+add drag & drop to layout
 
-数据统计（本地储存）
+data statistics & data visualization
 
-数据可视化
-
-RSS 链接
+add RSS link
 
 # Supported Browsers:
 
-Chrome 35+, Firefox 31+ 
+Chrome 35+, Firefox 31+ , IE10+
 
 ![enter image description here](http://svgporn.com/logos/chrome.svg)
 Google大法好
