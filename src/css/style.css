@@ -5,7 +5,7 @@ body {
 	font-family: Roboto,"MicroSoft YaHei",sans-serif;
 }
 nav {
-	height:120px;
+	height:64px;
 }
 h1,h2,h3,h4 {
 	margin:0px;
@@ -48,6 +48,13 @@ main .col > div:first-child {
 	width:100%;
 	bottom:2rem;
 	color:#000;
+}
+#searchBox {
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
 }
 .center > div {
 	border-radius:5px;

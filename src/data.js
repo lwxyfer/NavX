@@ -24,23 +24,30 @@ module.exports = {
       'github.com',
       '全球最大同行社交网站'
     ],
-    [ 'MDN',
-      'https://developer.mozilla.org/zh-CN/'],
+    ['MDN',
+      'https://developer.mozilla.org/zh-CN/'
+    ],
   ],
   blogs: [
-    [ '掘金',
+    ['掘金',
       'http://gold.xitu.io/#/',
-      '看看'],
-    [ 'CSS-trike',
-      'https://css-tricks.com/'],
-    [ 'Smashing',
-      'https://www.smashingmagazine.com/'],
-    [ 'html5Rock',
-      'http://www.html5rocks.com/en/'],
-    [ 'infoq',
-      'http://www.infoq.com/cn/'],
-    [ 'CSDN',
-      'http://www.csdn.net/'],
+      '看看'
+    ],
+    ['CSS-trike',
+      'https://css-tricks.com/'
+    ],
+    ['Smashing',
+      'https://www.smashingmagazine.com/'
+    ],
+    ['html5Rock',
+      'http://www.html5rocks.com/en/'
+    ],
+    ['infoq',
+      'http://www.infoq.com/cn/'
+    ],
+    ['CSDN',
+      'http://www.csdn.net/'
+    ],
   ],
   edits: [
     ['JS Bin',
@@ -122,5 +129,31 @@ module.exports = {
     ['Ionichina',
       'http://ionichina.com/'
     ],
+  ],
+  regexp:[
+    ['入门与语法',
+      'http://deerchao.net/tutorials/regex/regex.htm'
+    ],
+    ['MDN语法与简介',
+      'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions?redirectlocale=en-US&redirectslug=JavaScript%2FGuide%2FRegular_Expressions'
+    ],
+    ['实践',
+      'http://regexone.com/'
+    ],
+    ['正则验证',
+      'https://mengzhuo.org/regex/'
+    ],
+    ['正则练习',
+      'http://regex.alf.nu/'
+    ],
+    ['从简到难',
+      'https://regexcrossword.com/'
+    ],
+    ['正则挑战',
+      'http://callumacrae.github.io/regex-tuesday/'
+    ],
+    ['正则常用表达式',
+      'http://www.jb51.net/tools/regex.htm'
+    ]
   ]
 }
